@@ -25,7 +25,7 @@ Markdown очень популярен, используется GitHub, GitBook, Reddit, Stack Overflow и
 ## Заголовки
 Markdown поддерживает два стиля оформления заголовков "setext" и "atx".
 
-Setext-стиль предполагает, что заголовки первого уровня подчеркиваются символом "=", а заголовки второго уровня - символом <pre>"-"</pre>.
+Setext-стиль предполагает, что заголовки первого уровня подчеркиваются символом "=", а заголовки второго уровня - символом "-".
 
 Пример:
 <pre>
@@ -110,7 +110,7 @@ Header
 
 Добавить цитату (blockquote) можно с помощью символа "&gt;" в начале строки.
 ## Ссылки
-<img src="http://hypothetical-site.info/wp-content/uploads/2018/04/markdown3.png" alt="Работа со ссылками в Markdown" class="size-full wp-image-2130" width="1001" height="638">
+<img src="markdown3.png" alt="Работа со ссылками в Markdown" class="size-full wp-image-2130" width="1001" height="638">
 
 Markdown поддерживает два вида ссылок: inline и reference. В обоих случаях текст ссылки ограничивается квадратными скобками.
 
@@ -187,7 +187,7 @@ GitHub и GitBook (да и многие другие современные конвертеры) поддерживают автома
 <pre>Объявляем новую переменную и присваиваем ей значение `my $var = 1;`.</pre>
 
 ### Синтаксическое выделение кода
-<img src="http://hypothetical-site.info/wp-content/uploads/2018/04/markdown5.png" alt="Добавление блока кода в markdown" class="size-full wp-image-2150" width="618" height="342">
+<img src="markdown5.png" alt="Добавление блока кода в markdown" class="size-full wp-image-2150" width="618" height="342">
 
 Вы можете включить синтаксическую подсветку для куска кода, указав название
 используемого языка программирования:
@@ -197,7 +197,7 @@ GitHub и GitBook (да и многие другие современные конвертеры) поддерживают автома
 ```
 </pre>
 ### Таблицы
-<img src="http://hypothetical-site.info/wp-content/uploads/2018/04/markdown4.png" alt="Работа с таблицами в Markdown" class="size-full wp-image-2131" width="618" height="348">
+<img src="markdown4.png" alt="Работа с таблицами в Markdown" class="size-full wp-image-2131" width="618" height="348">
 
 Таблицы не являются частью спецификации Markdown, но зато они поддерживаются в версиях GitHub Markdown и Markdown Here.
 <pre>| Столбец 1 | Столбец 2 | Столбец 3 |
