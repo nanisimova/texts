@@ -36,7 +36,7 @@ This is an H2
 </pre>
 Количество "подчеркивающих" символов может быть любым.
 
-<img src="http://dev-lab.info/wp-content/uploads/2018/04/markdown2.png" alt="Работа с заголовками и картинками в Markdown" class="size-full wp-image-2129" width="823" height="429">
+<img src="markdown2.png" alt="Работа с заголовками и картинками в Markdown" class="size-full wp-image-2129" width="823" height="429">
 
 Atx-стиль предполагает использование от 1 до 6 символов "#" в начале заголовка. Количество символов обозначает уровень заголовка. Пример:
 <pre>
@@ -97,7 +97,7 @@ Header
 + первый элемент третьего ненумерованного списка
 </pre>
 
-<img src="http://dev-lab.info/wp-content/uploads/2018/04/markdown1.png" alt="Работа с заголовками и списками в Markdown" class="size-full wp-image-2128" width="792" height="409">
+<img src="markdown1.png" alt="Работа с заголовками и списками в Markdown" class="size-full wp-image-2128" width="792" height="409">
 
 Для создания нумерованного списка, так же перечисляем пункты списка, каждый с новой строки. Вначале строки каждого пункта - число и следующая за ним точка. Интересно то, что нет необходимости соблюдать какой либо порядок в числах, если вы ошибетесь и после "2" напишете "9", при конвертации все равно будет автоматически соблюден правильный порядок чисел, и вместо "9" вы увидите значение "3".
 
@@ -110,7 +110,7 @@ Header
 
 Добавить цитату (blockquote) можно с помощью символа "&gt;" в начале строки.
 ## Ссылки
-<img src="http://dev-lab.info/wp-content/uploads/2018/04/markdown3.png" alt="Работа со ссылками в Markdown" class="size-full wp-image-2130" width="1001" height="638"> Работа со ссылками в Markdown
+<img src="http://hypothetical-site.info/wp-content/uploads/2018/04/markdown3.png" alt="Работа со ссылками в Markdown" class="size-full wp-image-2130" width="1001" height="638">
 
 Markdown поддерживает два вида ссылок: inline и reference. В обоих случаях текст ссылки ограничивается квадратными скобками.
 
@@ -121,11 +121,8 @@ Markdown поддерживает два вида ссылок: inline и reference. В обоих случаях текст
 </pre>
 
 Reference-ссылки используют дополнительные квадратные скобки, внутри которого вы помещаете идентификатор ссылки. Идентификатор может быть как числом, так и строкой. Затем, в любом месте текста, вы сопоставляете идентификаторы ссылок и URL. Этот блок данных не будет отображаться при просмотре markdown-документа.
-<pre>
-[Reference-style link][id]</pre>
-
-<pre>
-</pre><pre>[id]: http://example.com/ "Optional Title Here"
+<pre>[Reference-style link][id]</pre>
+<pre>[id]: http://example.com/ "Optional Title Here"
 </pre>
 
 Вы можете дополнительно использовать пробел для разделения разных групп скобок:
@@ -137,11 +134,11 @@ GitHub и GitBook (да и многие другие современные конвертеры) поддерживают автома
 
 Правильная ссылка:
 <pre>
-[Блог программиста](http://dev-lab.info)
+[Блог программиста](http://hypothetical-site.info)
 </pre>
 Неправильная ссылка (там где нужны квадратные скобки - используются круглые, и наоборот):
 <pre>
-(Блог программиста)[http://dev-lab.info]
+(Блог программиста)[http://hypothetical-site.info]
 </pre>
 ## Изображения
 <pre>
@@ -160,7 +157,7 @@ GitHub и GitBook (да и многие другие современные конвертеры) поддерживают автома
 </ul>
 Пример:
 <pre>
-![Тут должна быть очень милая котейка](http://dev-lab.info/cat.png "Поделись с друзьями")
+![Тут должна быть очень милая котейка](http://hypothetical-site.info/cat.png "Поделись с друзьями")
 </pre>
 <ul>
 <li>Если окажется, что картинка не может быть загружена, пользователь увидит на экране надпись "Тут должна быть очень милая котейка".</li>
@@ -168,12 +165,12 @@ GitHub и GitBook (да и многие другие современные конвертеры) поддерживают автома
 </ul>
 Правильно:
 <pre>
-![](http://dev-lab.info/cat.png)
+![](http://hypothetical-site.info/cat.png)
 </pre>
 
 Неправильно (нет восклицательного знака):
 <pre>
-[My cat](http://dev-lab.info/cat.png)
+[My cat](http://hypothetical-site.info/cat.png)
 </pre>
 ## Блоки кода
 Вставка в документ блоков кода используется тогда, когда текст посвящен теме программирования и необходимо продемонстрировать большой или не очень кусок кода. Поскольку, Markdown-форматирование используется преимущественно в теме ИТ, потребность вставки и выделения блоков кода - одна из самых первостепенных.
@@ -190,7 +187,7 @@ GitHub и GitBook (да и многие другие современные конвертеры) поддерживают автома
 <pre>Объявляем новую переменную и присваиваем ей значение `my $var = 1;`.</pre>
 
 ### Синтаксическое выделение кода
-<img src="http://dev-lab.info/wp-content/uploads/2018/04/markdown5.png" alt="Добавление блока кода в markdown" class="size-full wp-image-2150" width="618" height="342">
+<img src="http://hypothetical-site.info/wp-content/uploads/2018/04/markdown5.png" alt="Добавление блока кода в markdown" class="size-full wp-image-2150" width="618" height="342">
 
 Вы можете включить синтаксическую подсветку для куска кода, указав название
 используемого языка программирования:
@@ -200,7 +197,7 @@ GitHub и GitBook (да и многие другие современные конвертеры) поддерживают автома
 ```
 </pre>
 ### Таблицы
-<img src="http://dev-lab.info/wp-content/uploads/2018/04/markdown4.png" alt="Работа с таблицами в Markdown" class="size-full wp-image-2131" width="618" height="348">
+<img src="http://hypothetical-site.info/wp-content/uploads/2018/04/markdown4.png" alt="Работа с таблицами в Markdown" class="size-full wp-image-2131" width="618" height="348">
 
 Таблицы не являются частью спецификации Markdown, но зато они поддерживаются в версиях GitHub Markdown и Markdown Here.
 <pre>| Столбец 1 | Столбец 2 | Столбец 3 |
