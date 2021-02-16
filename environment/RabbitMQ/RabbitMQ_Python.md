@@ -89,10 +89,10 @@ Pika предоставляет набор объектов для работы 
 
 Pika позволяет использовать несколько адаптеров для установления соединения с RabbitMQ:
 <ul>
-<li>**Tornado Connection Adapter**.</li>
-<li>**Twisted Connection Adapter**.</li>
-<li>**Select Connection Adapter** - асинхронный адаптер соединения, который пытается использовать самый быстрый адаптер цикла событий для данной платформы.</li>
-<li>**BlockingConnection** - модуль адаптера блокирующего соединения реализует блокирующую семантику поверх основного драйвера AMQP. Пользовательские классы в модуле состоят из классов BlockingConnection и BlockingChannel. Создание BlockingChannel:
+<li><b>Tornado Connection Adapter</b>.</li>
+<li><b>Twisted Connection Adapter</b>.</li>
+<li><b>Select Connection Adapter</b> - асинхронный адаптер соединения, который пытается использовать самый быстрый адаптер цикла событий для данной платформы.</li>
+<li><b>BlockingConnection</b> - модуль адаптера блокирующего соединения реализует блокирующую семантику поверх основного драйвера AMQP. Пользовательские классы в модуле состоят из классов BlockingConnection и BlockingChannel. Создание BlockingChannel:
 <pre>
 import pika
 
@@ -118,7 +118,7 @@ PlainCredentials и ExternalCredentials - классы учетных данны
 
 Чтобы обеспечить гибкость в указании информации о коннекте к RabbitMQ, pika реализует два класса для инкапсуляции информации: ConnectionParameters и URLParameters.
 <ul>
-<li>**ConnectionParameters** - классический объект для указания всех параметров подключения, необходимых для подключения к RabbitMQ. ConnectionParameters предоставляет атрибуты для настройки всех возможных параметров подключения.
+<li><b>ConnectionParameters</b> - классический объект для указания всех параметров подключения, необходимых для подключения к RabbitMQ. ConnectionParameters предоставляет атрибуты для настройки всех возможных параметров подключения.
 <pre>
 import pika
 
@@ -126,7 +126,7 @@ credentials = pika.PlainCredentials('guest', 'guest')
 parameters = pika.ConnectionParameters('rabbit-server1', 5672, '/', credentials)
 </pre>
 </li>
-<li>**URLParameters** - класс позволяет передавать URL-адрес AMQP при создании объекта и поддерживает хост, порт, виртуальный хост, ssl, имя пользователя и пароль в базовом URL-адресе, а другие параметры передаются через параметры запроса.
+<li><b>URLParameters</b> - класс позволяет передавать URL-адрес AMQP при создании объекта и поддерживает хост, порт, виртуальный хост, ssl, имя пользователя и пароль в базовом URL-адресе, а другие параметры передаются через параметры запроса.
 <pre>import pika
 
 parameters = pika.URLParameters('amqp://guest:guest@rabbit-server1:5672/%2F')
