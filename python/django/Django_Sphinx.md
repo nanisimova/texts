@@ -70,9 +70,11 @@ $ mysql -P 9306 -h 0
 
 При индексации могут возникнуть проблемы, т.к. sphinx и индексируемая mysql база находятся на разных хостах.
 
-Ошибка **"Can't connect to MySQL server on '192.168.101.35' (111 "Connection refused")"** решается исправлением конфига mysql, в файле /etc/mysql/mariadb.conf.d/50-server.cnf найти строку "bind-address = 127.0.0.1" и закомментировать ее.
+Ошибка **"Can't connect to MySQL server on '192.168.101.35' (111 "Connection refused")"** решается исправлением
+конфига mysql, в файле */etc/mysql/mariadb.conf.d/50-server.cnf* найти строку *"bind-address = 127.0.0.1"* и закомментировать ее.
 
-Ошибка: **"Host is not allowed to connect to this MariaDB server"**, решается настройкой прав пользователя mysql или созданием нового пользователя со всеми правами:
+Ошибка: **"Host is not allowed to connect to this MariaDB server"**, решается настройкой прав пользователя mysql или
+созданием нового пользователя со всеми правами:
 <pre>
 mysql> CREATE USER 'test'@'%' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'test'@'%' WITH GRANT OPTION;
